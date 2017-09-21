@@ -1,14 +1,36 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar color="primary">
+        <ion-title>
+            Ionic Gravatar
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-card>
+
+        <ion-item>
+            <img [src]="picture" height="120" width="120" class="img-rounded"/>
+        </ion-item>
+
+        <ion-card-content>
+
+            <ion-list no-lines inset>
+
+                <ion-item>
+                    <ion-label floating>Email</ion-label>
+                    <ion-input [(ngModel)]="email" (ionChange)="getProfilePicture($event)" type="email"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input [(ngModel)]="password" type="password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+
+        </ion-card-content>
+
+    </ion-card>
+
 </ion-content>

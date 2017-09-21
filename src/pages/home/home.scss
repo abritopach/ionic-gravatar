@@ -1,3 +1,31 @@
 page-home {
 
+  .scroll-content {
+    background-color: #E91E63;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ion-card img {
+    margin: auto;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  ion-input {
+    background-color: map-get($colors, light);
+    padding-left: 10px;
+    color: #757575;
+  }
+  ion-label {
+    color: #757575;
+  }
+
+  [floating] {
+    margin-left: 10px;
+  }
+
 }
